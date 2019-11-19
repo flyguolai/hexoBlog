@@ -68,10 +68,10 @@ cd blog
 hexo如果知识基础使用的话，需要用到的命令基本上只有一个
 
 ```bash
-hexo new <postname>
+hexo new postname
 ```
 
-<postname>中书写你的文章的英文路径
+postname 修改为你的文章的英文路径
 
 然后就可以直接看到在 /source/_posts 目录下生成了你的markdown文件
 
@@ -118,7 +118,7 @@ deploy:
   repo: <repository url> #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
 ```
 
-<repository url>修改为你的gitpage地址
+repository url 修改为你的gitpage地址
 
 然后运行
 

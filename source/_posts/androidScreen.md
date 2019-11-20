@@ -25,7 +25,7 @@ tags: android
 + 通过 MediaProjection 屏幕录制获得图像
 [参考](https://blog.csdn.net/rrrrrr123rrr/article/details/78884529)
 
-### 我使用的是 MediaProject 的方法，这里重点讲这个方法
+### 我使用的是 MediaProject 的方法，这里重点实现了这个方法
 
 由于我的需求是需要处处调用的，所以将获取像素点的一系列方法封装在一个单例之中，以达到一处声明，处处调用
 

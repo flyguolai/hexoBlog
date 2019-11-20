@@ -206,7 +206,7 @@ valine:
   appid: p8dc5OENn5OvoFlhtKE0lxw5-gzGzoHsz # your leancloud application appid
   appkey: IDA8njIaNUgIBpQtP59VhQ0o # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
+  verify: true # Verification code
   placeholder: 说点什么 # comment box placeholder
   avatar: retro # gravatar style https://valine.js.org/avatar.html
   pageSize: 10 # pagination size

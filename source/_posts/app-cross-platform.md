@@ -4,7 +4,7 @@ date: 2019-11-25 17:52:30
 tags:
 ---
 
-[跨平台開發的一些姿勢](https://medium.com/@kingapol/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E9%96%8B%E7%99%BC%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A7%BF%E5%8B%A2-e2a59b7849ce)
+# [跨平台開發的一些姿勢原文地址](https://medium.com/@kingapol/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E9%96%8B%E7%99%BC%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A7%BF%E5%8B%A2-e2a59b7849ce)
 
 ## 本文为为了照顾国内木有办法访问境外站点所以只能看转载的同学复制而来，如有侵权，联系我后立刻删除
 

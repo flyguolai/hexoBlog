@@ -45,7 +45,7 @@ Xamarin架構的優點是：他的效能損耗比較少，應該說比起Cordova
 
 # Titanium
 
-![titanium](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/platform-cors/xma.png)
+![titanium](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/platform-cors/titanium.png)
 安安你好，很高興認識你
 對不起，我跟他老兄不熟，只記得他當初也是要收費的，然後走的是JS to Native Binding的形式，可是聽說雷超級多，就沒有去踩了XD。某方面來說他也算是個先烈（？
 

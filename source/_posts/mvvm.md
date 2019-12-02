@@ -12,6 +12,8 @@ tags: mvvm 前端
 
 mvc的结构分层模式（其实说是模式也很勉强，只是单纯的分层），在那个大部分都是服务端直出的年代，这个结构分层的主要目的，是将原本代码直接从Model直接转化为View的这种强耦合形式进行拆分，使得View层和Model层实现弱耦合的形式，从而达到Model/View复用的形式，其实其本质就是将界面层和数据层进行了分离。
 
+![mvc](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/mvvm/mvc.png)
+
 直观一点说是，将原本在jsp页面上直接取数据库字段的行为，修改为了由控制器去获得数据，然后Controller拿到数据后，将数据再渲染到view层。这样做的好处是显而易见的
 
 + 将数据库字段和界面进行了解耦，不用因为界面需要，而将同一数据源的数据进行转换后再存一次
@@ -25,6 +27,8 @@ mvc的结构分层模式（其实说是模式也很勉强，只是单纯的分�
 # 前端结构的兴起
 
 随着时间的推移以及用户对交互，对界面的要求不断提高，开发者的精力逐渐不够，无法hold繁杂的产品链
+
+![jquery](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/mvvm/jquery.png)
 
 大概在2010年前后，前端和后端的概念形成了
 
@@ -40,7 +44,11 @@ mvc的结构分层模式（其实说是模式也很勉强，只是单纯的分�
 
 分水岭的话，大概是13年前后
 
+![phones](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/mvvm/phones.jpeg)
+
 一个大时代背景就是那个时候android/ios开发极其火热。本质上，android/ios的开发其实就和前端没什么差别，重点基本都是面向用户界面的展示。由于这个浪潮，界面的结构得到大大的人才流入也得到了大大的加强，首当其冲的是MVC，MVP这种模式在客户端的广泛应用，主要是用于各种界面与数据的使用。前端也得到了大大的加强，毕竟能在app层写，那就能在web写。
+
+![backbone](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/mvvm/backbone.png)
 
 同时，那时候有个比较成熟的框架叫做backbone.js，算是比较好的在整个实现了MVC的结构，逐渐的，有原来的程序员转行专门做交互了，也有专门的程序员直接负责后端页面，这种产品做出来往往交互/画面/可维护性/迭代速度/承载功能都会比较优秀。对于用户来说，你后台高不高效其实用户感知的不是很明显，最明显的其实是界面层，界面流畅与否很大程度上会影响用户的体感，所以大势所趋下，专门的前端程序员逐渐诞生了
 
@@ -60,11 +68,15 @@ mvc的结构分层模式（其实说是模式也很勉强，只是单纯的分�
 
 ViewModel层，其实是给View层建立了一层Model，起名为ViewModel。
 
+![mvvm](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/mvvm/mvvm.webp)
+
 ViewModel是和视图层进行了双向绑定的。（重点）
 
 双向绑定实现的效果就是，当ViewModel变了，View自然跟着响应式的变，而当View变了，ViewModel数据自动跟着变化
 
 当我需要变动view的上展示的数据时，不需要操作view的dom，而是修改view上节点对应的数据的viewModel即可。这样的好处就是，将修改dom节点的入口进行了规避，防止多处地方对一个view进行多次的复杂修改，导致代码的不可维护。
+
+![angularjs](https://blog-1256223865.cos.ap-shanghai.myqcloud.com/blog/mvvm/angularjs.png)
 
 而在angular.js中，其实mvvm中还有一层controller层（1.3版本以后）。但是controller层在angularjs中被大大的弱化了，它的主要作用是操控viewModel，以及让viewModel和model建立起链接，相当于一个适配器。当我service层变化时，只需要修改controller层与service层的适配，即可大幅度的提升界面的可复用性
 

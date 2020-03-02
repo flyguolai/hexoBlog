@@ -30,3 +30,30 @@ make: *** [bx_debug/libdebug.a] Error 2
 ```
 
 对关键字 ‘PHY_MEM_PAGES’ 进行搜索，基本就是毫无信息，一筹莫展，遂记录，然后睡觉
+
+不行，越想越气，起床继续写
+
+查资料根据
+
+>ISO C++ forbids initialization of member
+
+怀疑是gcc/c++版本太低，遂找centos6的升级，因为centos默认最高版本只有4.4.7，由于位的bochs版本是2.6.10的，所以可能不兼容，遂想办法升级gcc版本
+
+根据文章 https://www.vpser.net/manage/centos-6-upgrade-gcc.html 进行更新，然后make，大功告成。。。。我真是惊呆了。。。
+
+如果新学这个东西的人还是别用centos6了，毕竟8都已经出来了，用新的比较好。。。
+
+编译过程中确实出现了缺少文件，此处备用，用于以后以防万一还得再打一遍。。。
+
+```bash
+cp misc/bximage.cpp misc/bximage.cc
+cp iodev/hdimage/hdimage.cpp iodev/hdimage/hdimage.cc
+cp iodev/hdimage/vmware3.cpp iodev/hdimage/vmware3.cc
+cp iodev/hdimage/vmware4.cpp iodev/hdimage/vmware4.cc
+cp iodev/hdimage/vpc-img.cpp iodev/hdimage/vpc-img.cc
+cp iodev/hdimage/vbox.cpp iodev/hdimage/vbox.cc
+```
+
+然后编译成功
+
+哈哈哈哈哈，不愧是我

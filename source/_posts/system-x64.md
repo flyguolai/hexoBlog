@@ -56,4 +56,17 @@ cp iodev/hdimage/vbox.cpp iodev/hdimage/vbox.cc
 
 然后编译成功
 
-哈哈哈哈哈，不愧是我
+哈哈哈哈哈，不愧是我（臭屁）
+
+## 2019/03/02(其实是三月三号清晨)
+失眠，反反复复从12点床上晃到6点没睡着，遂起来学习
+
+尝试打开虚拟机失败，启动不起来，决定重新安装虚拟机（sad）
+
+有了前车之鉴决定装centos 8 配合最新点软件包，希望一切顺利
+
+然而失败了，报错
+
+> Bochs is not compiled with lowlevel sound support
+
+可能需要再研究一下配置或者bochsrc，睡啦

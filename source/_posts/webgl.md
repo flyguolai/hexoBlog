@@ -55,7 +55,7 @@ https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_shared_resource
 仔细阅读，阅读到最后
 
 
-```
+```text
 Revision 1, 2012/02/06
 
 Initial revision.
@@ -84,15 +84,15 @@ Rejected after discussion on public_webgl and no strong objections. At this poin
 
 虽然在直接使用的过程中发现无法正常将一张canvas上的东西画到另一张上去，但是在一通stackoverflow后，得到了答案https://stackoverflow.com/questions/31710748/todataurl-of-webgl-canvas-returning-transparent-image
 
-在第一次getContext时，配置项加入{preserveDrawingBuffer:true}
+在第一次getContext时，配置项加入`{preserveDrawingBuffer:true}`
 
 需要对上一次绘制的结果进行preserve
 
 但是个人觉得这个api并不友好，虽然是getContext，其实本质上也对context进行了一次初始化，并且之后如果和这次初始化的类型不一样只是会返回null，并没有很好的语义化，用起来特别别扭
 
-最后尝试使用offscreenCanvas，它本身提供了drawBitMap的api，相对于显式的canvas友好不少
+最后尝试使用`offscreenCanvas`，它本身提供了drawBitMap的api，相对于显式的canvas友好不少
 
-奇葩的是offscreenCanvas的更新需要调用它的toBitmap接口才好……不然它都是惰性的更新视图……黑一会更新一下黑一会更新一下……
+奇葩的是`offscreenCanvas`的更新需要调用它的toBitmap接口才好……不然它都是惰性的更新视图……黑一会更新一下黑一会更新一下……
 
 ## 2020/8/24 更新
 
@@ -104,7 +104,7 @@ Rejected after discussion on public_webgl and no strong objections. At this poin
 
 使用同一个context的形式可行，通过生成bitmap的形式效率在多个cnavas同屏幕显示效果也非常好（这行划掉）
 
-还是通过显式的canvas来更新canvas吧，offscreenCanvas不太行……
+还是通过显式的canvas来更新canvas吧，`offscreenCanvas`不太行……
 
 ## 2020/9/9 更新
 

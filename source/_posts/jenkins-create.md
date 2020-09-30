@@ -47,3 +47,14 @@ docker run -d --name jenkins --privileged=true -p 8081:8080 -p 8090:8090 -v jenk
 -v jenkins_data:/var/jenkins_home   volume挂载处，volume在/var/lib/docker/volumes
 ```
 
+## 配置拉去文件的权限
+
+https拉git项目默认就算配了ssh_key也没卵用，最方便的方法是在前面加上账号密码
+
+https://username:passworld@giturl.com
+
+## jenkins定时自动构建
+
+H 8,10,12,14,16 * * *  在8,10,12,14,16的时候构建
+
+关键词cron

@@ -1,6 +1,5 @@
 ---
-layout: Angular在懒加载子模块无法触发主模块的interceptor
-title: service-interceptor-failed
+title: Angular在懒加载子模块无法触发主模块的interceptor
 date: 2020-09-16 11:33:10
 tags: interceptor
 ---

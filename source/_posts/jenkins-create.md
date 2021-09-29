@@ -12,7 +12,7 @@ docker ps -a 查看是否有停用的`docker`
 
 docker stop `[CONTAINER_ID]`查看`id`
 
-docker rm `[CONTAINER_ID]`
+docker rm `[CONTAINER_ID]`/`[CONTAINER_NAME]`
 ```
 ## 一不小心把我admin账号的权限给干掉了
 
@@ -28,6 +28,16 @@ sudo docker cp  /home/tom/my.cnf  xxxx:/etc/mysql/
 
 `rolebase-plugin` 先配置角色，再配置角色组
 
+## 版本查询
+
+不同版本的镜像并不能用同一个volume，所以需要对jenkins版本进行记录
+
+或者查询
+
+docker image地址
+
+https://hub.docker.com/
+
 
 ## 数据持久化
 
@@ -39,7 +49,7 @@ sudo docker cp  /home/tom/my.cnf  xxxx:/etc/mysql/
 
 完整的示例
 ```bash
-docker run -d --name jenkins --privileged=true -p 8081:8080 -p 8090:8090 -v jenkins_data:/var/jenkins_home jenkins/jenkins:lts
+docker run -d --name jenkins --privileged=true -p 8081:8080 -p 8090:8090 -v ${jenkinsDataPath}:/var/jenkins_home jenkins/jenkins:2.265
 ```
 ```bash
 --name jenkins  这个docker的别名叫jenkins

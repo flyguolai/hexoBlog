@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://flyguolai.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -96,4 +96,4 @@ theme:  fluid
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
-  repo: 'https://github.com/flyguolai/flyguolai.github.io.git'
+  repo: 'git@github.com:flyguolai/flyguolai.github.io.git'
